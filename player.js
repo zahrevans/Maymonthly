@@ -1,4 +1,4 @@
-const player = [
+const players = [
   {
     "name": "Brock",
     "gen": 1,
@@ -731,3 +731,4 @@ const player = [
   }
 ]
 
+console.log(players.sprite)
