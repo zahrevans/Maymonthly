@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById("rosterGrid")
     const render = list => {
@@ -7,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             col.className = 'col-6 col-lg-2'
             col.innerHTML = `
             <div class= "card h-100 shadow-sm">
-                    <img src="${p.photo}" class="card-img-top" alt="${p.firstName} ${p.lastName}">
+                    <img src="gymleaders/${p.name.toLowerCase()}.png" class="card-img-top" alt="${p.name} ${p.lastName}">
                     <div class="card-body text-center">
                     <h5 class="card-title mb-1">${p.firstName} ${p.lastName}</h5>
                     <div class="badge badge-position badge-pos-${p.position}'>${p.position}</div>

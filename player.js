@@ -731,4 +731,4 @@ const players = [
   }
 ]
 
-console.log(players.sprite)
+console.log(players)
