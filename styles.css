@@ -1,0 +1,28 @@
+
+#landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Logo pop‑in */
+#landing-logo {
+  width: clamp(120px, 25vw, 240px);
+  height: auto;
+  animation: popIn 0.9s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
