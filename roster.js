@@ -2,23 +2,50 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById("rosterGrid")
-    const render = list => {
-        grid.innerHTML = ''
+  const typeColors = {
+    Normal: "#A8A77A",
+    Fire: "#EE8130",
+    Water: "#6390F0",
+    Electric: "#F7D02C",
+    Grass: "#7AC74C",
+    Ice: "#96D9D6",
+    Fighting: "#C22E28",
+    Poison: "#A33EA1",
+    Ground: "#E2BF65",
+    Flying: "#A98FF3",
+    Psychic: "#F95587",
+    Bug: "#A6B91A",
+    Rock: "#B6A136",
+    Ghost: "#735797",
+    Dragon: "#6F35FC",
+    Dark: "#705746",
+    Steel: "#B7B7CE",
+    Fairy: "#D685AD",
+};
+
+
+      const render = list => {
+        grid.innerHTML = '';
         list.forEach(p => {
-            const col = document.createElement('div')
-            col.className = 'col-6 col-lg-2'
-            col.innerHTML = `
-            <div class= "card h-100 shadow-sm">
-                    <img src="gymleaders/${p.name.toLowerCase()}.png" class="card-img-top" alt="${p.name} ${p.lastName}">
-                    <div class="card-body text-center">
-                    <h5 class="card-title mb-1">${p.firstName} ${p.lastName}</h5>
-                    <div class="badge badge-position badge-pos-${p.position}'>${p.position}</div>
-                    <p class="small text-muted mb-0" Age${p.age}</p>
-                </div>
+          const col = document.createElement('div');
+          col.className = 'col-6 col-md-4 col-lg-2';
+
+          const cardColor = typeColors[p.type] || "#777";
+
+          col.innerHTML = `
+            <div class="card h-100 shadow-sm text-white" style="background-color: ${cardColor};">
+              <img src="gymleaders/${p.name.toLowerCase()}.png" class="card-img-top" alt="${p.name}">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-1">${p.name}</h5>
+                <div class="badge badge-position">${p.type} Type</div>
+                <p class="small mb-0">${p.city} Gym</p>
+                <p class="small">${p.badge} Badge</p>
+              </div>
             </div>
-            `
-            grid.appendChild(col);
-        })
-    }
-    render(players)
-})
+          `;
+          grid.appendChild(col);
+        });
+      };
+
+      render(players);
+    });
