@@ -7,7 +7,8 @@ const players = [
     "type": "Rock",
     "badge": "Boulder",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brock.png",
-    "Ace": "Onix"
+    "Ace": "Onix",
+    "acetype": ""
   },
   {
     "name": "Misty",
@@ -20,7 +21,7 @@ const players = [
     "Ace": "Starmie"
   },
   {
-    "name": "Lt.Surge",
+    "name": "Lt. Surge",
     "gen": 1,
     "gym": 3,
     "city": "Vermilion City",
@@ -220,7 +221,7 @@ const players = [
     "Ace": "Altaria"
   },
   {
-    "name": "Tate&Liza",
+    "name": "Tate & Liza",
     "gen": 3,
     "gym": 7,
     "city": "Mossdeep City",
@@ -270,7 +271,7 @@ const players = [
     "Ace": "Lucario"
   },
   {
-    "name": "CrasherWake",
+    "name": "Crasher Wake",
     "gen": 4,
     "gym": 4,
     "city": "Pastoria City",

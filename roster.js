@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.getElementById("rosterGrid")
+  const grid = document.getElementById("rosterGrid")
   const typeColors = {
     Normal: "#A8A77A",
     Fire: "#EE8130",
@@ -21,31 +21,50 @@ document.addEventListener('DOMContentLoaded', () => {
     Dark: "#705746",
     Steel: "#B7B7CE",
     Fairy: "#D685AD",
-};
+  };
 
 
-      const render = list => {
-        grid.innerHTML = '';
-        list.forEach(p => {
-          const col = document.createElement('div');
-          col.className = 'col-6 col-md-4 col-lg-2';
+  const render = list => {
+    grid.innerHTML = '';
+    list.forEach((p, index) => {
+      const col = document.createElement('div');
+      col.className = 'col-6 col-md-4 col-lg-2';
 
-          const cardColor = typeColors[p.type] || "#777";
+      const cardColor = typeColors[p.type] || "#777";
 
-          col.innerHTML = `
+      col.innerHTML = `
             <div class="card h-100 shadow-sm text-white" style="background-color: ${cardColor};">
-              <img src="gymleaders/${p.name.toLowerCase()}.png" class="card-img-top" alt="${p.name}">
+              <img src="gymleaders/${p.name.toLowerCase().replace(/[ .]/g, '')}.png" class="card-img-top" alt="${p.name}">
               <div class="card-body text-center">
                 <h5 class="card-title mb-1">${p.name}</h5>
                 <div class="badge badge-position">${p.type} Type</div>
                 <p class="small mb-0">${p.city} Gym</p>
                 <p class="small">${p.badge} Badge</p>
+                 <button class="btn btn-sm btn-primary show-info-btn" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#playerModal">
+            More Info
+          </button>
+
               </div>
             </div>
           `;
-          grid.appendChild(col);
-        });
-      };
-
-      render(players);
+      grid.appendChild(col);
     });
+  };
+
+  render(players);
+  grid.addEventListener('click', function (e) {
+    if (e.target.classList.contains('show-info-btn')) {
+      const index = e.target.getAttribute('data-player-index')
+      const player = players[index]
+      showPlayerModal(player)
+    }
+  })
+  function showPlayerModal(player) {
+    document.getElementById('modalPhoto').src = `/acepokemon/${player.Ace.toLowerCase()}.png`
+    document.getElementById('modalName').textContent = `${player.firstName} ${player.lastName}`
+    document.getElementById('modalPosition').textContent = player.position
+    document.getElementById('modalAge').textContent = player.type
+  }
+
+
+});
