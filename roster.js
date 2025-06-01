@@ -32,21 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const cardColor = typeColors[p.type] || "#777";
 
-      col.innerHTML = `
-            <div class="card h-100 shadow-sm text-white" style="background-color: ${cardColor};">
-              <img src="gymleaders/${p.name.toLowerCase().replace(/[ .]/g, '')}.png" class="card-img-top" alt="${p.name}">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-1">${p.name}</h5>
-                <div class="badge badge-position">${p.type} Type</div>
-                <p class="small mb-0">${p.city} Gym</p>
-                <p class="small">${p.badge} Badge</p>
-                 <button class="btn btn-sm btn-primary show-info-btn" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#playerModal">
-            More Info
-          </button>
-
-              </div>
-            </div>
-          `;
+    // ...existing code...
+col.innerHTML = `
+  <div class="card h-100 shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);">
+    <div class="leader-image-container p-2">
+      <img src="gymleaders/${p.name.toLowerCase().replace(/[ .]/g, '')}.png" class="mx-auto d-block" alt="${p.name}">
+    </div>
+    <div class="card-body text-center pb-3">
+      <h5 class="card-title mb-1 fw-bold">${p.name}</h5>
+      <div class="badge badge-position mb-2" style="background:rgba(0,0,0,0.15);color:#fff;">${p.type} Type</div>
+      <p class="small mb-0">${p.city} Gym</p>
+      <p class="small mb-2">${p.badge} Badge</p>
+      <button class="btn btn-sm btn-light show-info-btn px-3" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#playerModal">
+        More Info
+      </button>
+    </div>
+  </div>
+`;
+// ...existing code...
       grid.appendChild(col);
     });
   };
