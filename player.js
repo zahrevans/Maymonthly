@@ -8,7 +8,7 @@ const players = [
     "badge": "Boulder",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brock.png",
     "Ace": "Onix",
-    "acetype": ""
+    "acetype": "Rock/Ground"
   },
   {
     "name": "Misty",
@@ -18,7 +18,8 @@ const players = [
     "type": "Water",
     "badge": "Cascade",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/misty.png",
-    "Ace": "Starmie"
+    "Ace": "Starmie",
+    "acetype": "Water/Psychic"
   },
   {
     "name": "Lt. Surge",
@@ -28,7 +29,8 @@ const players = [
     "type": "Electric",
     "badge": "Thunder",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/ltsurge.png",
-    "Ace": "Raichu"
+    "Ace": "Raichu",
+    "acetype": "Electric"
   },
   {
     "name": "Erika",
@@ -38,7 +40,8 @@ const players = [
     "type": "Grass",
     "badge": "Rainbow",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/erika.png",
-    "Ace": "Vileplume"
+    "Ace": "Vileplume",
+    "acetype": "Grass/Poison"
   },
   {
     "name": "Koga",
@@ -48,7 +51,8 @@ const players = [
     "type": "Poison",
     "badge": "Soul",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/koga.png",
-    "Ace": "Weezing"
+    "Ace": "Weezing",
+    "acetype": "Poison"
   },
   {
     "name": "Sabrina",
@@ -58,7 +62,8 @@ const players = [
     "type": "Psychic",
     "badge": "Marsh",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/sabrina.png",
-    "Ace": "Alakazam"
+    "Ace": "Alakazam",
+    "acetype": "Psychic"
   },
   {
     "name": "Blaine",
@@ -68,7 +73,8 @@ const players = [
     "type": "Fire",
     "badge": "Volcano",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/blaine.png",
-    "Ace": "Arcanine"
+    "Ace": "Arcanine",
+    "acetype": "Fire"
   },
   {
     "name": "Giovanni",
@@ -78,7 +84,8 @@ const players = [
     "type": "Ground",
     "badge": "Earth",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/giovanni.png",
-    "Ace": "Rhydon"
+    "Ace": "Rhydon",
+    "acetype": "Ground/Rock"
   },
   {
     "name": "Falkner",
