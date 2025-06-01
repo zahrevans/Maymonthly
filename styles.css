@@ -1,5 +1,6 @@
 body {
   background-color: #b5c5e2;
+  align-items: center;
 }
 
 #landing-wrapper {
@@ -100,4 +101,61 @@ body {
   border-radius: 8px;
   width: 20rem;
   text-align: center;
+}
+
+/* Stylish search bar */
+#searchinput {
+  border-radius: 2rem;
+  border: 2px solid #7ac7f5;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff; /* White background */
+  box-shadow: 0 2px 8px rgba(122, 199, 245, 0.08);
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem;
+}
+
+#searchinput:focus {
+  border-color: #6390f0;
+  box-shadow: 0 0 0 2px #6390f055;
+  background: #f0f7ff;
+}
+
+#searchinput .col-md-3 {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  min-width: 260px;
+  max-width: 350px;
+  flex: 1 1 260px;
+}
+
+#searchinput .form-select,
+#searchinput #searchInput {
+  margin-bottom: 0;
+  min-width: 220px;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+#searchinput .form-select {
+  border-radius: 2rem;
+  border: 2px solid #7ac7f5;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(122, 199, 245, 0.08);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+#searchinput .form-select:focus {
+  border-color: #6390f0;
+  box-shadow: 0 0 0 2px #6390f055;
+  background: #f0f7ff;
 }
