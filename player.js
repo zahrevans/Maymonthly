@@ -87,6 +87,7 @@ const players = [
     "Ace": "Rhydon",
     "acetype": "Ground/Rock"
   },
+
   {
     "name": "Falkner",
     "gen": 2,
@@ -95,7 +96,9 @@ const players = [
     "type": "Flying",
     "badge": "Zephyr",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/falkner.png",
-    "Ace": "Pidgeotto"
+    "Ace": "Pidgeotto",
+    "acetype": "Normal/Flying"
+
   },
   {
     "name": "Bugsy",
@@ -105,8 +108,11 @@ const players = [
     "type": "Bug",
     "badge": "Hive",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/bugsy.png",
-    "Ace": "Scyther"
+    "Ace": "Scyther",
+    "acetype": "Bug/Flying"
   },
+
+  // ...existing code...
   {
     "name": "Whitney",
     "gen": 2,
@@ -115,7 +121,8 @@ const players = [
     "type": "Normal",
     "badge": "Plain",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/whitney.png",
-    "Ace": "Miltank"
+    "Ace": "Miltank",
+    "acetype": "Normal"
   },
   {
     "name": "Morty",
@@ -125,7 +132,8 @@ const players = [
     "type": "Ghost",
     "badge": "Fog",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/morty.png",
-    "Ace": "Gengar"
+    "Ace": "Gengar",
+    "acetype": "Ghost/Poison"
   },
   {
     "name": "Chuck",
@@ -135,7 +143,8 @@ const players = [
     "type": "Fighting",
     "badge": "Storm",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/chuck.png",
-    "Ace": "Poliwrath"
+    "Ace": "Poliwrath",
+    "acetype": "Water/Fighting"
   },
   {
     "name": "Jasmine",
@@ -145,7 +154,8 @@ const players = [
     "type": "Steel",
     "badge": "Mineral",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/jasmine.png",
-    "Ace": "Steelix"
+    "Ace": "Steelix",
+    "acetype": "Steel/Ground"
   },
   {
     "name": "Pryce",
@@ -155,7 +165,8 @@ const players = [
     "type": "Ice",
     "badge": "Glacier",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/pryce.png",
-    "Ace": "Piloswine"
+    "Ace": "Piloswine",
+    "acetype": "Ice/Ground"
   },
   {
     "name": "Clair",
@@ -165,7 +176,8 @@ const players = [
     "type": "Dragon",
     "badge": "Rising",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clair.png",
-    "Ace": "Kingdra"
+    "Ace": "Kingdra",
+    "acetype": "Water/Dragon"
   },
   {
     "name": "Roxanne",
@@ -175,7 +187,8 @@ const players = [
     "type": "Rock",
     "badge": "Stone",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/roxanne.png",
-    "Ace": "Nosepass"
+    "Ace": "Nosepass",
+    "acetype": "Rock"
   },
   {
     "name": "Brawly",
@@ -185,7 +198,8 @@ const players = [
     "type": "Fighting",
     "badge": "Knuckle",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brawly.png",
-    "Ace": "Makuhita"
+    "Ace": "Makuhita",
+    "acetype": "Fighting"
   },
   {
     "name": "Wattson",
@@ -195,7 +209,8 @@ const players = [
     "type": "Electric",
     "badge": "Dynamo",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wattson.png",
-    "Ace": "Magneton"
+    "Ace": "Magneton",
+    "acetype": "Electric/Steel"
   },
   {
     "name": "Flannery",
@@ -205,7 +220,8 @@ const players = [
     "type": "Fire",
     "badge": "Heat",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/flannery.png",
-    "Ace": "Torkoal"
+    "Ace": "Torkoal",
+    "acetype": "Fire"
   },
   {
     "name": "Norman",
@@ -215,7 +231,8 @@ const players = [
     "type": "Normal",
     "badge": "Balance",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/norman.png",
-    "Ace": "Slaking"
+    "Ace": "Slaking",
+    "acetype": "Normal"
   },
   {
     "name": "Winona",
@@ -225,7 +242,8 @@ const players = [
     "type": "Flying",
     "badge": "Feather",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/winona.png",
-    "Ace": "Altaria"
+    "Ace": "Altaria",
+    "acetype": "Dragon/Flying"
   },
   {
     "name": "Tate & Liza",
@@ -235,7 +253,8 @@ const players = [
     "type": "Psychic",
     "badge": "Mind",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/tateliza.png",
-    "Ace": "Solrock"
+    "Ace": "Solrock",
+    "acetype": "Rock/Psychic"
   },
   {
     "name": "Wallace",
@@ -245,7 +264,8 @@ const players = [
     "type": "Water",
     "badge": "Rain",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wallace.png",
-    "Ace": "Milotic"
+    "Ace": "Milotic",
+    "acetype": "Water"
   },
   {
     "name": "Roark",
@@ -255,7 +275,8 @@ const players = [
     "type": "Rock",
     "badge": "Coal",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/roark.png",
-    "Ace": "Cranidos"
+    "Ace": "Cranidos",
+    "acetype": "Rock"
   },
   {
     "name": "Gardenia",
@@ -265,7 +286,8 @@ const players = [
     "type": "Grass",
     "badge": "Forest",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/gardenia.png",
-    "Ace": "Roserade"
+    "Ace": "Roserade",
+    "acetype": "Grass/Poison"
   },
   {
     "name": "Maylene",
@@ -275,7 +297,8 @@ const players = [
     "type": "Fighting",
     "badge": "Cobble",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/maylene.png",
-    "Ace": "Lucario"
+    "Ace": "Lucario",
+    "acetype": "Fighting/Steel"
   },
   {
     "name": "Crasher Wake",
@@ -285,7 +308,8 @@ const players = [
     "type": "Water",
     "badge": "Fen",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/crasherwake.png",
-    "Ace": "Floatzel"
+    "Ace": "Floatzel",
+    "acetype": "Water"
   },
   {
     "name": "Fantina",
@@ -295,7 +319,8 @@ const players = [
     "type": "Ghost",
     "badge": "Relic",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/fantina.png",
-    "Ace": "Mismagius"
+    "Ace": "Mismagius",
+    "acetype": "Ghost"
   },
   {
     "name": "Byron",
@@ -305,7 +330,8 @@ const players = [
     "type": "Steel",
     "badge": "Mine",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/byron.png",
-    "Ace": "Bastiodon"
+    "Ace": "Bastiodon",
+    "acetype": "Rock/Steel"
   },
   {
     "name": "Candice",
@@ -315,7 +341,8 @@ const players = [
     "type": "Ice",
     "badge": "Icicle",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/candice.png",
-    "Ace": "Abomasnow"
+    "Ace": "Abomasnow",
+    "acetype": "Grass/Ice"
   },
   {
     "name": "Volkner",
@@ -325,7 +352,8 @@ const players = [
     "type": "Electric",
     "badge": "Beacon",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/volkner.png",
-    "Ace": "Luxray"
+    "Ace": "Luxray",
+    "acetype": "Electric"
   },
   {
     "name": "Cilan",
@@ -335,7 +363,8 @@ const players = [
     "type": "Grass",
     "badge": "Trio",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/cilan.png",
-    "Ace": "Pansage"
+    "Ace": "Pansage",
+    "acetype": "Grass"
   },
   {
     "name": "Chili",
@@ -345,7 +374,8 @@ const players = [
     "type": "Fire",
     "badge": "Trio",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/chili.png",
-    "Ace": "Pansear"
+    "Ace": "Pansear",
+    "acetype": "Fire"
   },
   {
     "name": "Cress",
@@ -355,7 +385,8 @@ const players = [
     "type": "Water",
     "badge": "Trio",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/cress.png",
-    "Ace": "Panpour"
+    "Ace": "Panpour",
+    "acetype": "Water"
   },
   {
     "name": "Lenora",
@@ -365,7 +396,8 @@ const players = [
     "type": "Normal",
     "badge": "Basic",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/lenora.png",
-    "Ace": "Watchog"
+    "Ace": "Watchog",
+    "acetype": "Normal"
   },
   {
     "name": "Burgh",
@@ -375,7 +407,8 @@ const players = [
     "type": "Bug",
     "badge": "Beetle",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/burgh.png",
-    "Ace": "Leavanny"
+    "Ace": "Leavanny",
+    "acetype": "Bug/Grass"
   },
   {
     "name": "Elesa",
@@ -385,7 +418,8 @@ const players = [
     "type": "Electric",
     "badge": "Bolt",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/elesa.png",
-    "Ace": "Zebstrika"
+    "Ace": "Zebstrika",
+    "acetype": "Electric"
   },
   {
     "name": "Clay",
@@ -395,7 +429,8 @@ const players = [
     "type": "Ground",
     "badge": "Quake",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clay.png",
-    "Ace": "Excadrill"
+    "Ace": "Excadrill",
+    "acetype": "Ground/Steel"
   },
   {
     "name": "Skyla",
@@ -405,7 +440,8 @@ const players = [
     "type": "Flying",
     "badge": "Jet",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/skyla.png",
-    "Ace": "Swanna"
+    "Ace": "Swanna",
+    "acetype": "Water/Flying"
   },
   {
     "name": "Brycen",
@@ -415,7 +451,8 @@ const players = [
     "type": "Ice",
     "badge": "Icicle",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brycen.png",
-    "Ace": "Beartic"
+    "Ace": "Beartic",
+    "acetype": "Ice"
   },
   {
     "name": "Drayden",
@@ -425,7 +462,8 @@ const players = [
     "type": "Dragon",
     "badge": "Legend",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/drayden.png",
-    "Ace": "Haxorus"
+    "Ace": "Haxorus",
+    "acetype": "Dragon"
   },
   {
     "name": "Iris",
@@ -435,7 +473,8 @@ const players = [
     "type": "Dragon",
     "badge": "Legend",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/iris.png",
-    "Ace": "Haxorus"
+    "Ace": "Haxorus",
+    "acetype": "Dragon"
   },
   {
     "name": "Viola",
@@ -445,7 +484,8 @@ const players = [
     "type": "Bug",
     "badge": "Bug",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/viola.png",
-    "Ace": "Vivillon"
+    "Ace": "Vivillon",
+    "acetype": "Bug/Flying"
   },
   {
     "name": "Grant",
@@ -455,7 +495,8 @@ const players = [
     "type": "Rock",
     "badge": "Cliff",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/grant.png",
-    "Ace": "Tyrunt"
+    "Ace": "Tyrunt",
+    "acetype": "Rock/Dragon"
   },
   {
     "name": "Korrina",
@@ -465,7 +506,8 @@ const players = [
     "type": "Fighting",
     "badge": "Rumble",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/korrina.png",
-    "Ace": "Hawlucha"
+    "Ace": "Hawlucha",
+    "acetype": "Fighting/Flying"
   },
   {
     "name": "Ramos",
@@ -475,7 +517,8 @@ const players = [
     "type": "Grass",
     "badge": "Plant",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/ramos.png",
-    "Ace": "Gogoat"
+    "Ace": "Gogoat",
+    "acetype": "Grass"
   },
   {
     "name": "Clemont",
@@ -485,7 +528,8 @@ const players = [
     "type": "Electric",
     "badge": "Voltage",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/clemont.png",
-    "Ace": "Heliolisk"
+    "Ace": "Heliolisk",
+    "acetype": "Electric/Normal"
   },
   {
     "name": "Valerie",
@@ -495,7 +539,8 @@ const players = [
     "type": "Fairy",
     "badge": "Fairy",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/valerie.png",
-    "Ace": "Sylveon"
+    "Ace": "Sylveon",
+    "acetype": "Fairy"
   },
   {
     "name": "Olympia",
@@ -505,7 +550,8 @@ const players = [
     "type": "Psychic",
     "badge": "Psychic",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/olympia.png",
-    "Ace": "Meowstic"
+    "Ace": "Meowstic",
+    "acetype": "Psychic"
   },
   {
     "name": "Wulfric",
@@ -515,7 +561,8 @@ const players = [
     "type": "Ice",
     "badge": "Iceberg",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/wulfric.png",
-    "Ace": "Avalugg"
+    "Ace": "Avalugg",
+    "acetype": "Ice"
   },
   {
     "name": "Hala",
@@ -525,7 +572,8 @@ const players = [
     "type": "Fighting",
     "badge": "Melee",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/hala.png",
-    "Ace": "Crabominable"
+    "Ace": "Crabominable",
+    "acetype": "Fighting/Ice"
   },
   {
     "name": "Olivia",
@@ -535,7 +583,8 @@ const players = [
     "type": "Rock",
     "badge": "Rock",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/olivia.png",
-    "Ace": "Lycanroc"
+    "Ace": "Lycanroc",
+    "acetype": "Rock"
   },
   {
     "name": "Nanu",
@@ -545,7 +594,8 @@ const players = [
     "type": "Dark",
     "badge": "Dark",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/nanu.png",
-    "Ace": "Persian"
+    "Ace": "Persian",
+    "acetype": "Dark"
   },
   {
     "name": "Hapu",
@@ -555,7 +605,8 @@ const players = [
     "type": "Ground",
     "badge": "Ground",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/hapu.png",
-    "Ace": "Mudsdale"
+    "Ace": "Mudsdale",
+    "acetype": "Ground"
   },
   {
     "name": "Milo",
@@ -565,7 +616,8 @@ const players = [
     "type": "Grass",
     "badge": "Grass",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/milo.png",
-    "Ace": "Eldegoss"
+    "Ace": "Eldegoss",
+    "acetype": "Grass"
   },
   {
     "name": "Nessa",
@@ -575,7 +627,8 @@ const players = [
     "type": "Water",
     "badge": "Water",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/nessa.png",
-    "Ace": "Drednaw"
+    "Ace": "Drednaw",
+    "acetype": "Water/Rock"
   },
   {
     "name": "Kabu",
@@ -585,7 +638,8 @@ const players = [
     "type": "Fire",
     "badge": "Fire",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/kabu.png",
-    "Ace": "Centiskorch"
+    "Ace": "Centiskorch",
+    "acetype": "Fire/Bug"
   },
   {
     "name": "Bea",
@@ -595,7 +649,8 @@ const players = [
     "type": "Fighting",
     "badge": "Fighting",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/bea.png",
-    "Ace": "Machamp"
+    "Ace": "Machamp",
+    "acetype": "Fighting"
   },
   {
     "name": "Allister",
@@ -605,7 +660,8 @@ const players = [
     "type": "Ghost",
     "badge": "Ghost",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/allister.png",
-    "Ace": "Gengar"
+    "Ace": "Gengar",
+    "acetype": "Ghost/Poison"
   },
   {
     "name": "Opal",
@@ -615,7 +671,8 @@ const players = [
     "type": "Fairy",
     "badge": "Fairy",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/opal.png",
-    "Ace": "Alcremie"
+    "Ace": "Alcremie",
+    "acetype": "Fairy"
   },
   {
     "name": "Gordie",
@@ -625,7 +682,8 @@ const players = [
     "type": "Rock",
     "badge": "Rock",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/gordie.png",
-    "Ace": "Coalossal"
+    "Ace": "Coalossal",
+    "acetype": "Rock/Fire"
   },
   {
     "name": "Melony",
@@ -635,7 +693,8 @@ const players = [
     "type": "Ice",
     "badge": "Ice",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/melony.png",
-    "Ace": "Lapras"
+    "Ace": "Lapras",
+    "acetype": "Water/Ice"
   },
   {
     "name": "Piers",
@@ -645,7 +704,8 @@ const players = [
     "type": "Dark",
     "badge": "Dark",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/piers.png",
-    "Ace": "Obstagoon"
+    "Ace": "Obstagoon",
+    "acetype": "Dark/Normal"
   },
   {
     "name": "Raihan",
@@ -655,7 +715,8 @@ const players = [
     "type": "Dragon",
     "badge": "Dragon",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/raihan.png",
-    "Ace": "Duraludon"
+    "Ace": "Duraludon",
+    "acetype": "Steel/Dragon"
   },
   {
     "name": "Katy",
@@ -665,7 +726,8 @@ const players = [
     "type": "Bug",
     "badge": "Bug",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/katy.png",
-    "Ace": "Lokix"
+    "Ace": "Lokix",
+    "acetype": "Bug/Dark"
   },
   {
     "name": "Brassius",
@@ -675,7 +737,8 @@ const players = [
     "type": "Grass",
     "badge": "Grass",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/brassius.png",
-    "Ace": "Sudowoodo"
+    "Ace": "Sudowoodo",
+    "acetype": "Rock"
   },
   {
     "name": "Iono",
@@ -685,7 +748,8 @@ const players = [
     "type": "Electric",
     "badge": "Electric",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/iono.png",
-    "Ace": "Mismagius"
+    "Ace": "Mismagius",
+    "acetype": "Ghost"
   },
   {
     "name": "Kofu",
@@ -695,7 +759,8 @@ const players = [
     "type": "Water",
     "badge": "Water",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/kofu.png",
-    "Ace": "Crabominable"
+    "Ace": "Crabominable",
+    "acetype": "Fighting/Ice"
   },
   {
     "name": "Larry",
@@ -705,7 +770,8 @@ const players = [
     "type": "Normal",
     "badge": "Normal",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/larry.png",
-    "Ace": "Staraptor"
+    "Ace": "Staraptor",
+    "acetype": "Normal/Flying"
   },
   {
     "name": "Ryme",
@@ -715,7 +781,8 @@ const players = [
     "type": "Ghost",
     "badge": "Ghost",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/ryme.png",
-    "Ace": "Houndstone"
+    "Ace": "Houndstone",
+    "acetype": "Ghost"
   },
   {
     "name": "Tulip",
@@ -725,7 +792,8 @@ const players = [
     "type": "Psychic",
     "badge": "Psychic",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/tulip.png",
-    "Ace": "Florges"
+    "Ace": "Florges",
+    "acetype": "Fairy"
   },
   {
     "name": "Grusha",
@@ -735,7 +803,8 @@ const players = [
     "type": "Ice",
     "badge": "Ice",
     "sprite": "https://play.pokemonshowdown.com/sprites/trainers/grusha.png",
-    "Ace": "Altaria"
+    "Ace": "Altaria",
+    "acetype": "Dragon/Flying"
   }
 ]
 
