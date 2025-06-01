@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById("rosterGrid")
   const typeColors = {
@@ -28,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     grid.innerHTML = '';
     list.forEach((p, index) => {
       const col = document.createElement('div');
-      col.className = 'col-6 col-md-4 col-lg-2';
+      col.className = 'col-6 col-md-4 col-lg-3';
 
       const cardColor = typeColors[p.type] || "#777";
 
-    // ...existing code...
-col.innerHTML = `
-  <div class="card h-100 shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);">
+      // ...existing code...
+      col.innerHTML = `
+  <div class="card  shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);">
     <div class="leader-image-container p-2">
       <img src="gymleaders/${p.name.toLowerCase().replace(/[ .]/g, '')}.png" class="mx-auto d-block" alt="${p.name}">
     </div>
@@ -49,10 +47,37 @@ col.innerHTML = `
     </div>
   </div>
 `;
-// ...existing code...
+      // ...existing code...
       grid.appendChild(col);
     });
   };
+
+  const searchInput = document.getElementById('searchInput');
+  const generationSelect = document.getElementById('generationSelect');
+  const typeFilter = document.getElementById('typeFilter');
+
+  // Filtering function
+  function filterPlayers() {
+    const search = searchInput.value.trim().toLowerCase();
+    const gen = generationSelect.value;
+    const type = typeFilter.value;
+
+    const filtered = players.filter(p => {
+      const matchesSearch =
+        p.name.toLowerCase().includes(search) ||
+        (p.id && p.id.toString().includes(search));
+      const matchesGen = !gen || p.gen == gen;
+      const matchesType = !type || p.type === type;
+      return matchesSearch && matchesGen && matchesType;
+    });
+
+    render(filtered);
+  }
+
+  // Event listeners for filters
+  searchInput.addEventListener('input', filterPlayers);
+  generationSelect.addEventListener('change', filterPlayers);
+  typeFilter.addEventListener('change', filterPlayers);
 
   render(players);
   grid.addEventListener('click', function (e) {

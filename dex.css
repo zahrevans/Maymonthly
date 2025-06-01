@@ -21,6 +21,7 @@ body {
   -moz-border-radius: 60px;
   border-radius: 60px;
 }
+
 #scroll span {
   position: absolute;
   top: 50%;
@@ -61,6 +62,8 @@ body {
   margin: 10px !important;
   display: flex;
   flex-direction: column;
+  height: auto;
+  width: 16rem;
 }
 /* NAv bar css */
 .offcanvas-header {
