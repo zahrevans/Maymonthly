@@ -89,9 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   function showPlayerModal(player) {
     document.getElementById('modalPhoto').src = `/acepokemon/${player.Ace.toLowerCase()}.png`
-    document.getElementById('modalName').textContent = `${player.firstName} ${player.lastName}`
-    document.getElementById('modalPosition').textContent = player.position
-    document.getElementById('modalAge').textContent = player.type
+    document.getElementById('modalName').textContent = `${player.Ace}`;
+    document.getElementById('modalPosition').textContent = `${player.dexnumber}`;
+    document.getElementById('modalSpecies').textContent = `${player.species}`;
+    document.getElementById('modalAge').textContent = `${player.acetype}`;
     const modalContent = document.querySelector('#playerModal .modal-content');
     if (modalContent && player.acetype) {
       const types = player.acetype.split('/');

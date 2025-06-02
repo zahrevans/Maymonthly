@@ -151,7 +151,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="playerModalLabel">Ace Pokemon</h5>
+              <h5 class="modal-title" id="playerModalLabel">Ace Pokémon</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -159,21 +159,33 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body text-center">
-              <div class="modalPhoto">
+            <div class="modal-body d-flex flex-column align-items-center">
+              <div class="modalPhoto mb-3">
                 <img
                   id="modalPhoto"
                   src=""
                   alt="Player Photo"
                   class="img-fluid mb-2"
+                  style="
+                    width: 14rem;
+                    height: 14rem;
+                    object-fit: contain;
+                    border-radius: 0.75rem;
+                    background: #111;
+                  "
                 />
               </div>
-              <div class="modalDetails">
-                <h5 id="modalName"></h5>
+              <div class="modalDetails w-100 text-center">
+                <h5 id="modalName" class="mb-2"></h5>
                 <p>
-                  <strong>Position:</strong> <span id="modalPosition"></span>
+                  <strong>Pokedex Number:</strong>
+                  <span id="modalPosition"></span>
                 </p>
-                <p><strong>Age:</strong> <span id="modalAge"></span></p>
+                <p><strong>Type:</strong> <span id="modalAge"></span></p>
+                <p>
+                  <strong>Species:</strong>
+                  <span id="modalSpecies"></span>
+                </p>
               </div>
             </div>
           </div>
