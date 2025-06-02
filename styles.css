@@ -191,3 +191,80 @@ body {
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
 }
+
+/* NAv bar css */
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  background: linear-gradient(90deg, #7ac7f5 0%, #f5f6fa 100%);
+  border-bottom: 2px solid #6390f0;
+}
+.offcanvas-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  color: #6390f0;
+  letter-spacing: 1px;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  overflow-y: auto;
+  background: linear-gradient(120deg, #fafdff 60%, #e3ecfc 100%);
+  min-height: 100vh;
+}
+
+.nav-item {
+  text-decoration: underline;
+  color: #222;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 1.2rem;
+  transition: color 0.2s, background 0.2s, padding 0.2s;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+}
+
+.nav-item .nav-link {
+  color: #6390f0 !important;
+  transition: color 0.2s;
+  font-size: 1.15em;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  color: #ee8130 !important;
+  background: #e3ecfc;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.offcanvas .btn-close {
+  filter: invert(50%) sepia(80%) saturate(500%) hue-rotate(180deg);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.offcanvas .btn-close:hover {
+  opacity: 1;
+}
+
+/* Optional: Add a subtle shadow for depth */
+.offcanvas {
+  box-shadow: 0 8px 32px rgba(122, 199, 245, 0.18);
+}
+
+/* Responsive tweaks for offcanvas */
+@media (max-width: 767px) {
+  .offcanvas-title {
+    font-size: 1.5rem;
+  }
+  .nav-item {
+    font-size: 20px;
+    padding: 0.4rem 0.8rem;
+  }
+}
