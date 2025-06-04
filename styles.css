@@ -5,6 +5,8 @@ body {
   background-color: #b5c5e2;
   align-items: center;
 }
+.d-none {
+}
 
 #landing-wrapper {
   display: flex;

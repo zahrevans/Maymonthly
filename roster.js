@@ -20,19 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     Steel: "#B7B7CE",
     Fairy: "#D685AD",
   };
-
-
   const render = list => {
     grid.innerHTML = '';
     list.forEach((p, index) => {
       const col = document.createElement('div');
       col.className = 'col-6 col-md-4 col-lg-3';
-
       const cardColor = typeColors[p.type] || "#777";
-
+      let id = p.name.split(" ");
+      id = id[id.length - 1];
       // ...existing code...
       col.innerHTML = `
-  <div class="card  shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);">
+  <div class="card shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);" id="${id}">
     <div class="leader-image-container p-2">
       <img src="gymleaders/${p.name.toLowerCase().replace(/[ .]/g, '')}.png" class="mx-auto d-block" alt="${p.name}">
     </div>
@@ -42,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="small mb-0">${p.city} Gym</p>
       <p class="small mb-2">${p.badge} Badge</p>
       <button class="btn btn-sm btn-light show-info-btn px-3" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#playerModal">
-        More Info
+        More Info, ${index}
       </button>
     </div>
   </div>
@@ -51,11 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
       grid.appendChild(col);
     });
   };
-
   const searchInput = document.getElementById('searchInput');
   const generationSelect = document.getElementById('generationSelect');
   const typeFilter = document.getElementById('typeFilter');
-
   // Filtering function
   function filterPlayers() {
     const search = searchInput.value.trim().toLowerCase();
@@ -70,8 +66,31 @@ document.addEventListener('DOMContentLoaded', () => {
       const matchesType = !type || p.type === type;
       return matchesSearch && matchesGen && matchesType;
     });
-
-    render(filtered);
+    // render(filtered);
+    const hideFiltered = filtered => {
+      players.forEach(e => {
+        let id = e.name.split(" ");
+        id = id[id.length - 1];
+        document.querySelector(`#${id}`).classList.add("d-none")
+      })
+      filtered.forEach(e => {
+        let id = e.name.split(" ");
+        id = id[id.length - 1];
+        document.querySelector(`#${id}`).classList.remove("d-none")
+      });
+      let rows = Array.from(document.getElementsByClassName("row"));
+      rows.forEach(e => {
+        let children = Array.from(e.querySelectorAll("div.col-md-4"));
+        console.log(children)
+        let i = 0;
+        children.forEach(a => {
+          if (a.classList.contains("d-none")) i++;
+        })
+        if (i == children.length) e.classList.add("d-none");
+        else e.classList.remove("d-none")
+      })
+    }
+    hideFiltered(filtered)
   }
 
   // Event listeners for filters
@@ -117,12 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
       modalContent.style.background = ''; // Reset background
     }
   });
-
-
 });
-
 // back to top button 
-
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
