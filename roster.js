@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p class="small mb-0">${p.city} Gym</p>
       <p class="small mb-2">${p.badge} Badge</p>
       <button class="btn btn-sm btn-light show-info-btn px-3" data-player-index="${index}" data-bs-toggle="modal" data-bs-target="#playerModal">
-        More Info, ${index}
+        Ace Pokémon
       </button>
     </div>
   </div>
