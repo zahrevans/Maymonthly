@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
   function showPlayerModal(player) {
-    document.getElementById('modalPhoto').src = `/acepokemon/${player.Ace.toLowerCase()}.png`
+    document.getElementById('modalPhoto').src = `acepokemon/${player.Ace.toLowerCase()}.png`
     document.getElementById('modalName').textContent = `${player.Ace}`;
     document.getElementById('modalPosition').textContent = `${player.dexnumber}`;
     document.getElementById('modalSpecies').textContent = `${player.species}`;
