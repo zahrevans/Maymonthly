@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardColor = typeColors[p.type] || "#777";
       let id = p.name.split(" ");
       id = id[id.length - 1];
-      // ...existing code...
       col.innerHTML = `
   <div class="card shadow rounded-4 border-0 overflow-hidden text-white" style="background: linear-gradient(135deg, ${cardColor} 80%, #fff2 100%);" id="${id}">
     <div class="leader-image-container p-2">
@@ -45,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
 `;
-      // ...existing code...
       grid.appendChild(col);
     });
   };
@@ -71,24 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
       players.forEach(e => {
         let id = e.name.split(" ");
         id = id[id.length - 1];
-        document.querySelector(`#${id}`).classList.add("d-none")
-      })
+        const el = document.querySelector(`#${id}`);
+        if (el) el.parentElement.classList.add("d-none");
+      });
       filtered.forEach(e => {
         let id = e.name.split(" ");
         id = id[id.length - 1];
-        document.querySelector(`#${id}`).classList.remove("d-none")
+        const el = document.querySelector(`#${id}`);
+        if (el) el.parentElement.classList.remove("d-none");
       });
-      let rows = Array.from(document.getElementsByClassName("row"));
-      rows.forEach(e => {
-        let children = Array.from(e.querySelectorAll("div.col-md-4"));
-        console.log(children)
-        let i = 0;
-        children.forEach(a => {
-          if (a.classList.contains("d-none")) i++;
-        })
-        if (i == children.length) e.classList.add("d-none");
-        else e.classList.remove("d-none")
-      })
+      // Remove row hiding logic
     }
     hideFiltered(filtered)
   }
